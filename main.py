@@ -165,7 +165,7 @@ df2 = df2.T
 
 # print(df2)
 
-df2.to_csv("./output/{0}_sim_{1}.csv".format(name, dt_now), encoding="utf8")
+df2.to_csv("./output/{0}_sim_{1}.csv".format(name, dt_now), encoding="utf_8_sig")
 
 div_s = np.zeros((sites, 1), dtype=np.float)
 
@@ -220,7 +220,7 @@ c = np.concatenate((sp_s, com_s, div_s,div_h), axis = 1)
 
 df3 = pd.DataFrame(np.round(c, decimals=2), index=sites_index, columns=div_index).T
 #df3.append(np.round(div_h, decimals=1))
-df3.to_csv("./output/{0}_div_{1}.csv".format(name, dt_now), encoding="utf8")
+df3.to_csv("./output/{0}_div_{1}.csv".format(name, dt_now), encoding="utf_8_sig")
 
 # print(df3)
 # print(div_h)
