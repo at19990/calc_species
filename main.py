@@ -115,7 +115,7 @@ sites_index = list(df.columns)
 
 
 
-div_index = ["Shimpson lambda", "Shannon-Wiener H'"]
+div_index = ["総個体数", "共通種数", "Shimpson lambda", "Shannon-Wiener H'"]
 
 # print(sites_index)
 
@@ -171,6 +171,10 @@ div_s = np.zeros((sites, 1), dtype=np.float)
 
 div_h = np.zeros((sites, 1), dtype=np.float)
 
+sp_s = np.zeros((sites, 1), dtype=np.float)
+
+com_s = np.zeros((sites, 1), dtype=np.float)
+
 rand = random.sample(range(sites), k=sites)
 
 for i in range(0, sites):
@@ -184,6 +188,8 @@ for i in range(0, sites):
             pass
         else:
             sum += (df.iloc[j, i] / sum_c)**2
+            sp_s[i] += df.iloc[j, i]
+            com_s[i] += 1
         # print("sum = {0}".format(sum))
 
     div_s[i] = 1 - sum
@@ -205,7 +211,7 @@ for i in range(0, sites):
 
     div_h[i] = sum * (-1)
 
-c = np.concatenate((div_s,div_h), axis = 1)
+c = np.concatenate((sp_s, com_s, div_s,div_h), axis = 1)
 
 # print(c)
 
