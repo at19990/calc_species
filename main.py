@@ -103,7 +103,7 @@ dt_now = str(dt_now.strftime('%Y%m%d-%H%M%S'))
 
 #dt_now = str(dt_now.year) + str(dt_now.month) + str(dt_now.day) + "-" + str(dt_now.hour) + str(dt_now.minute) + str(dt_now.second)
 
-df = pd.read_csv(filename, index_col=0, encoding="SHIFT-JIS")
+df = pd.read_csv(filename, index_col=0, encoding="utf8")
 
 # print(df)
 
@@ -165,7 +165,7 @@ df2 = df2.T
 
 # print(df2)
 
-df2.to_csv("./output/{0}_sim_{1}.csv".format(name, dt_now), encoding="SHIFT-JIS")
+df2.to_csv("./output/{0}_sim_{1}.csv".format(name, dt_now), encoding="utf8")
 
 div_s = np.zeros((sites, 1), dtype=np.float)
 
@@ -214,7 +214,7 @@ c = np.concatenate((div_s,div_h), axis = 1)
 
 df3 = pd.DataFrame(np.round(c, decimals=2), index=sites_index, columns=div_index).T
 #df3.append(np.round(div_h, decimals=1))
-df3.to_csv("./output/{0}_div_{1}.csv".format(name, dt_now), encoding="SHIFT-JIS")
+df3.to_csv("./output/{0}_div_{1}.csv".format(name, dt_now), encoding="utf8")
 
 # print(df3)
 # print(div_h)
