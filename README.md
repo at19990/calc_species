@@ -1,4 +1,5 @@
 # calc_species  
+
 ## About  
 群集組成を記述した地点と種のcsvファイルから各地点種の多様度(Shimpson lambda および Shannon-Wiener H')・各地点の類似度(Chao指数)を計算し、CSVで出力します  
 また、類似度からMDS(多次元尺度法)で群集同士の関連性を導いて2次元平面上に図示し、画像で出力します
@@ -30,4 +31,9 @@ python main.py ***.csv
 
 [[3]](http://www.mus-nh.city.osaka.jp/iso/argo/nl15/nl15-10-22.pdf) 大垣俊一 (2008) 多様度と類似度、分類学的新指標. Argonauta 15:10-22
 
-[[4]](http://www.kaiseiken.or.jp/study/lib/news123kaisetu.pdf) 海生研ニュース No.123
+[[4]](http://www.kaiseiken.or.jp/study/lib/news123kaisetu.pdf) 海生研ニュース No.123  
+
+## Note  
+リファクタリング・検証はこれから進める予定ですので、出力結果の正確性については保障いたしかねます  
+また、出力結果の利用およびそれにより生じた損害について、本プログラムの製作者は責任を負いかねます
+
