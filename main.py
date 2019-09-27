@@ -17,7 +17,6 @@ import sklearn.tree._utils
 import japanize_matplotlib
 
 
-
 # U のうちの、総和要素を計算
 def sum(f_plus_one, f_plus_one_list, f_plus_two, f_plus_two_list, com_sp, com_sp_list, num_i, num_j, i, j):
     sum_1 = 0
