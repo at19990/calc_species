@@ -32,7 +32,7 @@ python main.py ***.csv
 
 [[3]](http://www.mus-nh.city.osaka.jp/iso/argo/nl15/nl15-10-22.pdf) 大垣俊一 (2008) 多様度と類似度、分類学的新指標. Argonauta 15:10-22
 
-[[4]](http://www.kaiseiken.or.jp/study/lib/news123kaisetu.pdf) 山田裕 (2014) 生物の多様度指数(1). 海生研ニュース 123 : 6 - 7  
+[[4]](http://www.kaiseiken.or.jp/study/lib/news123kaisetu.pdf) 山田裕 (2014) 生物の多様度指数(1). 海生研ニュース 123 : 6-7  
 
 ## Note  
 リファクタリング・検証はこれから進める予定です  
