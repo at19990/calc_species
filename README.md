@@ -1,7 +1,7 @@
 # calc_species  
 
 ## About  
-群集組成を記述した地点と種のcsvファイルから各地点種の多様度(Shimpson lambda および Shannon-Wiener H')・各地点の類似度(Chao指数)を計算し、CSVで出力します  
+群集組成を記述した地点と種のcsvファイルから各地点の生物種の多様度(Shimpson lambda および Shannon-Wiener H')・各地点の類似度(Chao指数)を計算し、CSVで出力します  
 また、類似度からMDS(多次元尺度法)で群集同士の関連性を導いて2次元平面上に図示し、画像で出力します  
 実行結果のサンプルは `output` フォルダをごらんください (`sample_utf8.csv` を入力した際の出力結果)
 
