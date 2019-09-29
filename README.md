@@ -5,7 +5,7 @@
 また、類似度からMDS (多次元尺度法) で群集同士の関連性を導いて2次元平面上に図示し、画像で出力します  
 実行結果のサンプルは `output` フォルダを参照ください (`sample_utf8.csv` を入力した際の出力結果)
 
-## 使用方法
+## How to use
 `sample_utf8.csv` を参考に、列に地点・行に種をとって記述した群衆組成のデータをCSV (エンコード: UTF-8) で保存し、コマンドで
 
 ```
@@ -14,17 +14,17 @@ python main.py ***.csv
 
 のように実行すると、`output` ディレクトリ以下に分析結果が出力されます (フォルダがないときには自動で作成します)
 
-## 出力結果
+## output
 
 ```
-***_div_{実行日時}.csv : 各地点における多様度
+***_div_{execution date}.csv : diversity indexes in each point
 
-***_sim_{実行日時}.csv : 各地点間の類似度
+***_sim_{execution date}.csv : similarity indexes in each point
 
-***_MDS_{実行日時}.png : 多次元尺度法による分析結果
+***_MDS_{execution date}.png : result of Multi Dimensional Scaling
 ```
 
-## 参考文献
+## bibliography
 
 [[1]](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1461-0248.2004.00707.x) Chao A, Chazdon RL, Colwell RK, Shen T (2005) A new statistical approach for assessing similarity of species composition with incidence and abundance data. Ecol Let 8:148-159
 
@@ -35,5 +35,5 @@ python main.py ***.csv
 [[4]](http://www.kaiseiken.or.jp/study/lib/news123kaisetu.pdf) 山田裕 (2014) 生物の多様度指数(1). 海生研ニュース 123 : 6-7  
 
 ## Note  
-リファクタリング・検証はこれから進める予定です  
-出力結果の正確性および利用に伴い発生した損害に関して、本プログラムの製作者は責任を負いかねます
+Refactoring and verification is proceeding.
+Please note that I don't take responsibility or liability for accuracy of output results and any damage or loss caused through our service.
