@@ -9,7 +9,7 @@ Webアプリ版は[こちら](https://calc-species.herokuapp.com/)から
 
 ## 使用方法
 
-使用パッケージについては、`requirement.txt`をご参照の上、適宜インストールしてください
+使用パッケージについては、`requirements.txt`をご参照の上、適宜インストールしてください
 
 `sample_utf8.csv` を参考に、列に地点・行に種をとって記述した群集組成のデータをCSV (エンコード: UTF-8) で保存し、コマンドで
 
