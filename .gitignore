@@ -3,3 +3,7 @@ build/
 dist/
 exe/
 main.spec
+calc.py
+calc2.py
+hello.py
+hello2.py
