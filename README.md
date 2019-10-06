@@ -1,3 +1,4 @@
+Webアプリ版は[こちら](https://calc-species.herokuapp.com/)から
 # calc_species  
 
 ## About  
