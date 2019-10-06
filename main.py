@@ -98,7 +98,7 @@ sites = len(df.columns)
 sites_index = list(df.columns)
 
 # 出力時に用いるインデックスを用意
-div_index = ["総個体数", "共通種数", "Shimpson lambda", "Shannon-Wiener H'"]
+div_index = ["総個体数", "種数", "Shimpson lambda", "Shannon-Wiener H'"]
 
 # 配列を0埋めで初期化
 U = np.zeros((sites, sites), dtype=np.float)
